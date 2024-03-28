@@ -1,0 +1,20 @@
+
+ /* Initial position of sidebar */
+ .container{
+    box-sizing: border-box; /* Ensure box sizing includes border and padding */
+    position: absolute;
+    top: -100vh; /* Initially hides the sidebar above the viewport */
+    right: 0;
+    /* Full width and height of viewport */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    transition: top 1s ease;  /* Transition for smooth animation */
+}
+
+/* Reveals the sidebar by setting its top position to 0 */
+.showNavBar{
+    top: 0;
+}
+
+  

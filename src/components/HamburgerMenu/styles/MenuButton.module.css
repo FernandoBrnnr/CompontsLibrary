@@ -1,0 +1,47 @@
+.hamburgerContainer{
+    /* Flex container with column direction */
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1; /* Ensures element appears above other content */
+    cursor: pointer;
+    margin-right: 20px;
+    height: 45px;
+    transition: all 1s ease;
+}
+
+span{
+    box-sizing: border-box;
+    /* Dimensions of each line */
+    height: 10px;
+    width: 50px;
+
+    margin-bottom: 5px; /* Spacing between lines */
+    background-color: black;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+/* Additional styles applied when menu is opened */
+.menuOpened{
+    background-color: #fff;
+}
+
+/* Styles for the middle line when menu is opened */
+.middle{
+    /* Move middle line to the left and make it transparent */
+    transform: translateX(-30px);
+    opacity: 0;
+}
+
+/* Styles for the top line when menu is opened */
+.top{
+    /* Rotate top line and move it down */
+    transform: translateY(15px) rotate(45deg);
+}
+
+/* Styles for the bottom line when menu is opened */
+.bottom{
+    /* Rotate bottom line and move it up */
+    transform: translateY(-15px) rotate(-45deg);
+}

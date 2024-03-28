@@ -1,0 +1,10 @@
+.menuContainer{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
