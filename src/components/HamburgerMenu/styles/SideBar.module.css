@@ -1,14 +1,14 @@
-
+@import './variables.css';
  /* Initial position of sidebar */
  .container{
     box-sizing: border-box; /* Ensure box sizing includes border and padding */
     position: absolute;
-    top: -100vh; /* Initially hides the sidebar above the viewport */
-    right: 0;
+    top: var( --sidebar-top-position); /* Initially hides the sidebar above the viewport */
+    right: var(--sidebar-right-position);
     /* Full width and height of viewport */
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    width: var(--sidebar-width);
+    height:  var(--sidebar-height);
+    background-color: var(--sidebar-background-color); /* Semi-transparent black background */
     transition: top 1s ease;  /* Transition for smooth animation */
 }
 

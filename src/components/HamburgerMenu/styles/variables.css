@@ -5,4 +5,10 @@
     --line-down-animation: calc(var(--line-height) + var(--line-margin));
     --line-up-animation: calc(var(--line-down-animation) * -1);
     --lines-background-color: #000;
+    /* Sidebar Styles */
+    --sidebar-background-color: rgba(0, 0, 0, 0.5);
+    --sidebar-width: 100vw;
+    --sidebar--height: 100vh;
+    --sidebar-top-position: -100vh;
+    --sidebar-right-position: 0;
 }
