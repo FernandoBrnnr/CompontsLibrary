@@ -1,3 +1,5 @@
+@import './variables.css';
+
 .hamburgerContainer{
     /* Flex container with column direction */
     display: flex;
@@ -13,11 +15,11 @@
 span{
     box-sizing: border-box;
     /* Dimensions of each line */
-    height: 10px;
-    width: 50px;
+    height: var(--line-height);
+    width: var(--line-width);
 
-    margin-bottom: 5px; /* Spacing between lines */
-    background-color: black;
+    margin-bottom: var(--line-margin); /* Spacing between lines */
+    background-color: var(--lines-background-color); 
     border-radius: 10px;
     transition: all 1s ease;
 }
@@ -37,11 +39,11 @@ span{
 /* Styles for the top line when menu is opened */
 .top{
     /* Rotate top line and move it down */
-    transform: translateY(15px) rotate(45deg);
+    transform: translateY(var(--line-down-animation)) rotate(45deg);
 }
 
 /* Styles for the bottom line when menu is opened */
 .bottom{
     /* Rotate bottom line and move it up */
-    transform: translateY(-15px) rotate(-45deg);
+    transform: translateY(var(--line-up-animation)) rotate(-45deg);
 }

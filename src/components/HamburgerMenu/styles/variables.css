@@ -1,0 +1,8 @@
+:root{
+    --line-width: 38px;
+    --line-height: 5px;
+    --line-margin: 5px;
+    --line-down-animation: calc(var(--line-height) + var(--line-margin));
+    --line-up-animation: calc(var(--line-down-animation) * -1);
+    --lines-background-color: #000;
+}
